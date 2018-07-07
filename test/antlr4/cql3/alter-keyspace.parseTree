@@ -9,7 +9,7 @@
                     (property_name replication)
                     =
                     (property_value
-                        (map
+                        (r_map
                         {
                             (term (constant 'class')) : (term (constant 'SimpleStrategy'))
                             ,

@@ -40,5 +40,5 @@
                 (index_options
                     OPTIONS
                     =
-                    (map { (term (constant 'storage')) : (term (constant '/mnt/ssd/indexes/')) }))))
+                    (r_map { (term (constant 'storage')) : (term (constant '/mnt/ssd/indexes/')) }))))
     ;)

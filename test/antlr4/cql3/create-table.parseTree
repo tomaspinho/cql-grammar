@@ -80,5 +80,5 @@
                             (property_name compaction)
                             =
                             (property_value
-                                (map { (term (constant 'class')) : (term (constant 'LeveledCompactionStrategy')) })))))))
+                                (r_map { (term (constant 'class')) : (term (constant 'LeveledCompactionStrategy')) })))))))
         ;)
