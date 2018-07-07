@@ -38,5 +38,5 @@
                 (property
                     (property_name durable_writes)
                     =
-                    (property_value (constant (bool false)))))))
+                    (property_value (constant (r_bool false)))))))
     ;)
