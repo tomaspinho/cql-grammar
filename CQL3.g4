@@ -129,7 +129,7 @@ index_class
     ;
 
 index_options
-    : K_OPTIONS '=' map
+    : K_OPTIONS '=' r_map
     ;
 
 update_stmt
@@ -143,7 +143,7 @@ update_assignments
 update_assignment
     : column_name '=' term
     | column_name '=' column_name ('+' | '-') (INTEGER | set | list)
-    | column_name '=' column_name '+' map
+    | column_name '=' column_name '+' r_map
     | column_name '[' term ']' '=' term
     ;
 
@@ -258,7 +258,7 @@ constant
     : STRING
     | INTEGER
     | FLOAT
-    | bool
+    | r_bool
     | UUID
     | BLOB
     ;
@@ -276,12 +276,12 @@ term
     ;
 
 collection
-    : map
+    : r_map
     | set
     | list
     ;
 
-map
+r_map
     : '{' (term ':' term (',' term ':' term)*)? '}'
     ;
 
@@ -312,7 +312,7 @@ property_name
 property_value
     : IDENTIFIER
     | constant
-    | map
+    | r_map
     ;
 
 data_type
@@ -347,7 +347,7 @@ collection_type
     ;
 
 
-bool
+r_bool
     : K_TRUE
     | K_FALSE
     ;
